@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Oswald&family=Roboto:wght@300&display=swap');
+
+
+header{
+    background-color: #748cab;
+    padding: 1.5em;
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Montserrat;
+}
+header div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+header h3{
+    flex:wrap;
+    justify-content:right;
+    margin-left:60em;
+    color: #112A46;
+}
+li.nav{
+    margin:1em;
+    padding: 10px;
+    background-color: #f0ebd8;
+    border: 1px solid #748cab;
+    border-style:ridge;
+    border-radius: 20px;
+    font-family: Montserrat;
+    border-spacing: 1;
+    display:inline-flex;
+    justify-content: center;
+    width: 100px;
+    text-align:center;
+}
+
+header a{
+    text-decoration: none;
+    color:Black;
+    
+    
+}
+
+
+header li:hover{
+    color:#748cab;
+    transform: scale(1.1);
+}
+header a:hover{
+    color:#748cab;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color:#f0ebd8;
+}
+h2{
+    font-family: Montserrat;
+    color:#3e5c76;
+    display:flex;
+    justify-content:center;
+}
+
+.prod{
+    background-color: #1d2d44;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:2em;
+    padding:2em;
+    transition: transform 0.4s ease;
+}
+
+#carousel{
+    display:flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+#carousel>div{
+    scroll-snap-align: start;
+    flex-shrink: 0 ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+p{
+    color:#1d2d44;
+    display:flex;
+    text-align:center;
+    font-family: Montserrat;
+}
+#prodcomplet{
+    display: flex; 
+    flex-direction: row;
+    margin:5em;
+    column-gap: 4em;
+}
+
+
+.prod h2{
+    color: #f0ebd8;
+}
+
+h3{
+    font-family: Montserrat;
+    color:#f0ebd8;
+    font-size: 100%;
+    padding-bottom: 1em;
+}
+
+.prod:hover{
+    transform:scale(1.1);
+    background-color: #3e5c76;
+}
+
+body section{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding:2em;
+}
+h1{
+    font-family: Montserrat;
+    color:#1d2d44;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 2em;
+}
+.prod img{
+    width: 100%;
+}
+#desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc h3{
+    color:#748cab;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    background-color: #748cab;
+    color:#112A46;
+    font-family: Montserrat;
+    border-radius:25px;
+    display:flex;
+    justify-content: center;
+    padding-top:1em;
+    padding-bottom:1em;
+    width:20%;
+}
+#recom{
+    padding-right: 20em;
+    padding-left: 20em;
+}
+#recom a{
+    text-decoration:none;
+}
+footer{
+    background-color:#748cab;
+    padding:3em;
+    text-align:center;
+    margin-top:3em;
+}
+
+footer p{
+    font-family: Montserrat;
+    color:#112A46;
+}
+
+@media only screen and (max-width: 480px){
+    header {
+        padding: 1em; 
+    }
+    
+    header div {
+        flex-direction: column;
+        align-items: center; 
+    }
+    ul{
+        padding-inline-start:0;
+    }
+    
+    header h3 {
+        margin: 0; 
+    }
+    
+    li.nav > a {
+        width: 80px;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        text-align: center;
+    }
+    #prodcomplet{
+        flex-direction: column;
+        text-align: center;
+    }
+    #recom{
+        flex-direction: column;
+        align-items:center;
+        width:90%;
+        padding:0;
+        padding-left:1.3em;
+    }
+    h4{
+        width:80%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width: 912px){
+    header {
+        padding: 1em; 
+    }
+    
+    header div {
+        flex-direction: column;
+        align-items: center; 
+    }
+    ul{
+        padding-inline-start:0;
+    }
+    
+    header h3 {
+        margin: 0; 
+    }
+    
+    li.nav > a {
+        width: 80px;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        text-align: center;
+    }
+    #recom{
+        width:80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:0;
+        padding-left:6em;
+    }
+    h4{
+        width:80%;
+    }
+}

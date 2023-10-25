@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Oswald&family=Roboto:wght@300&display=swap');
+
+
+header{
+    background-color: #748cab;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Montserrat;
+    color: #112A46;
+}
+header div{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+header h3{
+    flex:wrap;
+    justify-content:right;
+    margin-left:60em;
+}
+
+li.nav>a{
+    margin:1em;
+    padding: 10px;
+    background-color: #f0ebd8;
+    border: 1px solid #748cab;
+    border-style:ridge;
+    border-radius: 20px;
+    font-family: Montserrat;
+    width: 100px;
+    border-spacing: 1;
+}
+
+li.nav{
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: center;
+    text-align:center;
+}
+
+
+header a{
+    text-decoration: none;
+    color:Black;
+    
+}
+
+header a:hover{
+    color:#748cab;
+    transform: scale(1.1);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f0ebd8;
+    overflow-x:hidden;
+}
+#promo{
+    display:flex;
+    flex:wrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:2em;
+    margin:3em;
+    position: relative;
+}
+#promo button{
+    position:absolute;
+    top:85%;
+    left:50%;
+    border-radius: 20px;
+    border-style: none;
+    background-color:#3e5c76;
+    color:#f0ebd8;
+    font-family: Montserrat;
+    padding-right:1%;
+    padding-left:1%;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    transition: transform 0.4s ease;
+    transform: translate(-50%, -50%)
+}
+#promo button:hover{
+    background-color: #748cab;
+    cursor:pointer;
+}
+
+#promo a{
+    text-decoration: none;
+    color:#f0ebd8;
+    font-family: Montserrat;
+    border: 1px solid #3e5c76;
+    text-align:center;
+    padding: 30px;
+    border-style:ridge;
+    border-radius: 20px;
+    border-spacing: 1em;
+    background-color: #3e5c76;
+    padding-top: 2em;
+    
+
+}
+#promo img{
+    width: 100%;
+}
+
+
+ #promo>a>img:hover {
+    box-shadow: #748cab 10px 10px 10px, #748cab 10px 10px 10px;
+ }
+
+ #promo button:hover+ img{
+    box-shadow: #748cab 10px 10px 10px, #748cab 10px 10px 10px;
+ }
+.categ, .prod{
+    background-color: #1d2d44;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    margin:1em;
+    transition: transform 0.4s ease;
+    font-family: Montserrat;
+    color: #f0ebd8;
+    
+}
+.categ img, .prod img{
+    width:80%;
+}
+
+.categ:hover, .prod:hover{
+    transform:scale(1.1);
+    background-color: #3e5c76;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+
+}
+
+h1{
+    font-family: Montserrat;
+    color:#1d2d44;
+    display: flex;
+    justify-content:center;
+}
+footer{
+    background-color:#748cab;
+    padding:3em;
+    text-align:center;
+    margin-top:3em;
+}
+
+footer p{
+    font-family: Montserrat;
+    color:#112A46;
+}
+#extraits{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    gap:3rem;
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+      padding: 1em; 
+    }
+  
+    header div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h3 {
+      margin: 0; 
+    }
+  
+    li.nav > a {
+      width: 80px;
+      justify-content:center; 
+    }
+    ul{
+        padding-left:0;
+    }
+
+    #extraits{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    #tendancesrap{
+        width:100%;
+    }
+    #promo button{
+        width:100%;
+        top: 105%;
+        left: 50%;
+    }
+    h1{
+        text-align: center;
+        margin-top: 2em;
+    }
+    section{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+  @media only screen and (min-width:481px) and (max-width: 912px){
+    header {
+        padding: 1em;
+    }
+    
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        padding-inline-start:0;
+    }
+    
+    header h3 {
+        margin: 0; 
+    }
+    
+    li.nav > a {
+        width: 80px;
+        justify-content: center;
+    }
+    #promo button{
+        width:100%;
+        top: 105%;
+        left: 50%;
+    }
+    #extraits{
+        flex-direction: column;
+        align-items:center;
+    }
+    h1{
+        margin-top:5em;
+    }
+
+}

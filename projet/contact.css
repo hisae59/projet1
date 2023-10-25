@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Oswald&family=Roboto:wght@300&display=swap');
+
+
+header{
+    background-color: #748cab;
+    padding: 1.5em;
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Montserrat;
+  color: #112A46;
+}
+header div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+header h3{
+    flex:wrap;
+    justify-content:right;
+    margin-left:60em;
+}
+li.nav{
+    margin:1em;
+    padding: 10px;
+    background-color: #f0ebd8;
+    border: 1px solid #748cab;
+    border-style:ridge;
+    border-radius: 20px;
+    font-family: Montserrat;
+    border-spacing: 1;
+    display:inline-flex;
+    justify-content: center;
+    width: 100px;
+    text-align:center;
+}
+
+header a{
+    text-decoration: none;
+    color:Black;
+    
+}
+
+
+header li:hover{
+    color:#748cab;
+    transform: scale(1.1);
+}
+header a:hover{
+    color:#748cab;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f0ebd8;
+}
+
+footer{
+    background-color:#748cab;
+    padding:3em;
+    text-align:center;
+    margin-top:3em;
+}
+
+footer p{
+    font-family: Montserrat;
+    color:#112A46;
+}
+
+#formulaire{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    font-family: Montserrat;
+    color:#3e5c76;
+    background-color: #d7d0b9;
+    border-radius: 20px;
+    margin:3em;
+    margin-left:5em;
+    margin-right:5em;
+}
+#formulaire h2, div{
+    display:flex;
+    justify-content:center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#formulaire.champ{
+    display: flex;
+    flex-direction: column;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-color: #748cab;
+}
+@media only screen and (max-width: 480px){
+    header {
+        padding: 1em; 
+    }
+    
+    header div {
+        flex-direction: column;
+        align-items: center; 
+    }
+    ul{
+        padding-inline-start:0;
+    }
+    
+    header h3 {
+        margin: 0; 
+    }
+    
+    li.nav > a {
+        width: 80px;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        text-align: center;
+    }
+    #formulaire{
+        width:90%;
+        margin:0;
+        margin:1em;
+    }
+}
+@media only screen and (min-width:481px) and (max-width: 912px){
+    header {
+        padding: 1em; 
+    }
+    
+    header div {
+        flex-direction: column;
+        align-items: center; 
+    }
+    ul{
+        padding-inline-start:0;
+    }
+    
+    header h3 {
+        margin: 0; 
+    }
+    
+    li.nav > a {
+        width: 80px;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        text-align: center;
+    }
+    #formulaire{
+        width:90%;
+        margin:0;
+        margin:1em;
+        display: flex;
+        justify-content: center;
+        margin-left: 2.5em;
+    }
+}
